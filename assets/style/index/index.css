@@ -1,0 +1,221 @@
+header {
+  background-color: rgba(0, 0, 0, 0.363);
+  width: 100%;
+  height: 9rem;
+  border-bottom: 1px solid gold;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+}
+
+.contador {
+  margin: 0 5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.contador .box-1 {
+  width: 48%;
+}
+.contador .box-1 h1 {
+  font-size: 3.5rem;
+}
+.contador .box-1 span {
+  font-size: 12rem;
+}
+.contador .box-2 {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contador .box-2 .computador {
+  width: 38rem;
+  height: 28rem;
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+.contador .box-2 .computador .munitor {
+  width: 38rem;
+  height: 46rem;
+  transition: all 2s ease 0s;
+  transform: rotateX(90deg);
+}
+.contador .box-2 .computador .munitor svg {
+  transition: all 2.5s ease;
+}
+.contador .box-2 .computador .munitor .tela {
+  width: 38rem;
+  height: 23rem;
+  background-color: gray;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(163, 153, 153);
+}
+.contador .box-2 .computador .baixado {
+  transition: all 2s ease 0s;
+  transform: rotateX(-10deg);
+}
+.contador .box-2 .computador .baixado .tela {
+  transition: all 2.5s ease;
+  box-shadow: 1px -19px 75px -2px rgba(170, 255, 255, 0.89);
+}
+.contador .box-2 .computador .baixado svg {
+  fill: rgb(170, 255, 255);
+}
+.contador .box-2 .computador .comp {
+  background-color: gray;
+  width: 38rem;
+  height: 2rem;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 1px 5px 8px -2px rgba(0, 0, 0, 0.25) inset;
+  transform: translateY(-23rem);
+}
+.contador .box-2 .computador .comp::before {
+  content: "";
+  width: 28rem;
+  height: 1.2rem;
+  bottom: 0;
+  left: 15%;
+  position: absolute;
+  background-color: rgb(75, 74, 74);
+}
+
+.linguagens-hid {
+  width: 36rem;
+  height: 8rem;
+  margin-left: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.linguagens-hid .ling {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.623);
+  border-radius: 50%;
+  -webkit-animation: anim 3s ease infinite;
+          animation: anim 3s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linguagens-hid .ling img {
+  width: 100%;
+}
+.linguagens-hid .ling:nth-child(1) {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.linguagens-hid .ling:nth-child(2) {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+.linguagens-hid .ling:nth-child(3) {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.linguagens-hid .ling:nth-child(4) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.linguagens-hid .ling:nth-child(5) {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.linguagens-hid .ling:nth-child(6) {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+.linguagens-hid .ling:nth-child(7) {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.linguagens-hid .ling:nth-child(8) {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+.linguagens-hid .ling:nth-child(9) {
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+.linguagens-hid .ling:nth-child(10) {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+.linguagens-hid .ling:nth-child(11) {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.linguagens-hid .ling:nth-child(12) {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.coracao img {
+  padding: 1rem;
+  padding-top: 1.1rem;
+}
+
+.garg img, .nerd img {
+  padding: 1rem;
+}
+
+.linguagens {
+  opacity: 0;
+  height: 8rem;
+}
+
+.cafe {
+  padding: 1rem;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    transform: translateY(22rem);
+    scale: 1;
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(4rem);
+    scale: 1.1;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1rem);
+    scale: 1.5;
+    opacity: 0;
+  }
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(22rem);
+    scale: 1;
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(4rem);
+    scale: 1.1;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1rem);
+    scale: 1.5;
+    opacity: 0;
+  }
+}
+footer {
+  height: 20rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.37);
+}/*# sourceMappingURL=index.css.map */
