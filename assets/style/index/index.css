@@ -89,6 +89,11 @@ main {
   background-color: rgb(75, 74, 74);
 }
 
+@media (max-width: 970px) {
+  .contador {
+    flex-direction: column-reverse;
+  }
+}
 .linguagens-hid {
   width: 36rem;
   height: 8rem;
@@ -212,6 +217,20 @@ main {
     transform: translateY(1rem);
     scale: 1.5;
     opacity: 0;
+  }
+}
+@media (max-width: 970px) {
+  :root {
+    font-size: 52.5%;
+  }
+  .linguagens-hid {
+    margin-left: 0;
+  }
+  .box-efeito {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10rem;
   }
 }
 footer {

@@ -13,6 +13,7 @@ main{
 
   display: flex;
   flex-direction: row-reverse;
+  
 
   align-items: center;
   justify-content: space-evenly;
@@ -117,6 +118,16 @@ main{
     }
   }
 }
+@media (max-width: 970px) {
+  .contador{
+    flex-direction: column-reverse;
+  }
+}
+
+
+  
+
+
 
 .linguagens-hid{
   width: 36rem;
@@ -127,24 +138,24 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  
   
   .ling{
     width: 6rem;
     height: 6rem;
-
+    
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, 0.623);
-
+    
     border-radius: 50%;
-
+    
     
     animation: anim 3s ease infinite;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     img{
       width: 100%;
     }
@@ -160,7 +171,7 @@ main{
     &:nth-child(3){
       animation-duration: 7s;
     }
-
+    
     &:nth-child(4){
       animation-duration: 2s;
     }
@@ -227,17 +238,34 @@ main{
     scale: 1;
     opacity: 1;
   }
-
+  
   75%{
     transform: translateY(4rem);
     scale: 1.1;
     opacity: 1;
   }
-
+  
   100%{
     transform: translateY(1rem);
     scale: 1.5;
     opacity: 0;
   }
 }
+    @media (max-width: 970px) {
+
+      :root{
+        font-size: 52.5%;
+      }
+      .linguagens-hid{
+        margin-left: 0;
+      }
+    
+      .box-efeito{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        margin-bottom: 10rem;
+      }
+    }
 @import "../includes/footer";
