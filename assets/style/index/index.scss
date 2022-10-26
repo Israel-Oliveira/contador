@@ -48,8 +48,7 @@ main{
 
       perspective: 800px;
       transform-style: preserve-3d;
-
-      
+    
       .munitor{
         width: 38rem;
         height: 46rem;
@@ -121,19 +120,20 @@ main{
 @media (max-width: 970px) {
   .contador{
     flex-direction: column-reverse;
+    margin-top: 20rem;
   }
 }
 
 
-  
+.espacim{
+  height: 8rem;
+}
 
 
 
 .linguagens-hid{
   width: 36rem;
   height: 8rem;
-
-  margin-left: 10rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -224,6 +224,7 @@ main{
 
 .linguagens{
   opacity: 0;
+  display: none;
   height: 8rem;
 }
 
@@ -234,19 +235,19 @@ main{
 @keyframes anim{
  
   0%{
-    transform: translateY(22rem);
+    transform: translateY(10rem);
     scale: 1;
     opacity: 1;
   }
   
   75%{
-    transform: translateY(4rem);
+    transform: translateY(-5rem);
     scale: 1.1;
     opacity: 1;
   }
   
   100%{
-    transform: translateY(1rem);
+    transform: translateY(-10rem);
     scale: 1.5;
     opacity: 0;
   }
@@ -256,16 +257,20 @@ main{
       :root{
         font-size: 52.5%;
       }
-      .linguagens-hid{
-        margin-left: 0;
-      }
-    
-      .box-efeito{
-        display: flex;
-        justify-content: center;
-        width: 100%;
 
-        margin-bottom: 9rem;
+      .box-1{
+        margin-top: 15rem;
       }
+      // .linguagens-hid{
+      //   margin-left: 0;
+      // }
+    
+      // .box-efeito{
+      //   display: flex;
+      //   justify-content: center;
+      //   width: 100%;
+
+      //   margin-bottom: 9rem;
+      // }
     }
 @import "../includes/footer";

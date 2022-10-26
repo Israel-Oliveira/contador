@@ -18,6 +18,7 @@ let counter = setInterval(function(){
 
 const munitor = document.querySelector(".munitor")
 const linguagens = document.querySelector("#efeito")
+const espacim = document.querySelector("#espacim")
 
 // munitor.addEventListener("click", ()=>{
 //   munitor.classList.toggle('baixado')
@@ -46,6 +47,7 @@ function munitor2(){
 function aparecaLinguagem(){
   linguagens.classList.toggle('linguagens')
   linguagens.classList.toggle('linguagens-hid')
+  espacim.classList.toggle('espacim')
 }
 
 
