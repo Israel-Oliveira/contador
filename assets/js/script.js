@@ -25,18 +25,20 @@ const espacim = document.querySelector("#espacim")
 // })
 
 
-setInterval(cagada, 13500)
+// setInterval(cagada, 13500)
 
-function cagada(){
-  setTimeout(munitor2, 2000);
+// function cagada(){
+//   setTimeout(munitor2, 2000);
 
-  setTimeout(aparecaLinguagem, 3300);
+//   setTimeout(aparecaLinguagem, 3300);
   
-  setTimeout(aparecaLinguagem, 13000)
+//   setTimeout(aparecaLinguagem, 13000)
   
-  setTimeout(munitor2, 13000);
-}
+//   setTimeout(munitor2, 13000);
+// }
 
+setTimeout(munitor2, 2000);
+setTimeout(aparecaLinguagem, 3300);
 
 
 
